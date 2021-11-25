@@ -50,4 +50,4 @@ Feature: Tests for login
     And request { "email": "fulano@qa.com", "password": "" }
     When method post
     Then status 400
-    And print 'Response is: teste gi ', response
+    And print 'Response is: teste git ', response
