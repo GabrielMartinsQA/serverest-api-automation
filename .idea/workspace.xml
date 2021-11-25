@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65a2dce7-6ad1-4798-8afa-c1ad6338b428" name="Changes" comment="Feature de login">
+    <list default="true" id="65a2dce7-6ad1-4798-8afa-c1ad6338b428" name="Changes" comment="ajuste pra teste login">
       <change beforePath="$PROJECT_DIR$/../.github/CODE_OF_CONDUCT.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.github/CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.github/FUNDING.yml" beforeDir="false" />
@@ -18,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../_config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../_includes/nav.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../_includes/toc.html" beforeDir="false" />
@@ -1569,6 +1568,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feature de login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature de login" />
+    <MESSAGE value="ajuste pra teste login" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste pra teste login" />
   </component>
 </project>
