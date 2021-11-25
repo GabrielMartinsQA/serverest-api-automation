@@ -19,6 +19,13 @@ dist/
 # Package files
 *.jar
 
+# Maven
+target/
+.DS_Store
+dist/
+
+# JetBrains IDE
+.idea/
 
 # Unit test reports
 TEST*.xml
@@ -41,7 +48,3 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-
-#Maven
-\.idea
-\target
