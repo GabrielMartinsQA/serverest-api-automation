@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.conduitApp.feature.Marvel</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-12 03:51:26 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get all tags</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/conduitApp/feature/Marvel.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Tests for the Marvel API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2026</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://developer.marvel.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:51:24.834 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2018</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">15:51:25.242 request:
+1 &gt; GET https://developer.marvel.com/signin
+1 &gt; Host: developer.marvel.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:51:26.875 response time in milliseconds: 1621
+1 &lt; 404
+1 &lt; Date: Fri, 12 Nov 2021 18:51:24 GMT
+1 &lt; Server: Apache/2.4.7 (Ubuntu) OpenSSL/1.0.1f
+1 &lt; P3P: CP=&quot;ALL DSP COR NID CURa TAIa OTPi OUR BUS UNI INT PRE&quot;
+1 &lt; Expire: -1
+1 &lt; X-ServerNickName: Deathlok Developer Production1
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: text/html; charset=UTF-8
+&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt; &lt;html class=&quot;lt-ie9 juggernaut  grid_940&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class=&quot;juggernaut  grid_940&quot;&gt; &lt;!--&lt;![endif]--&gt;
+
+&lt;head&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+// &lt;![CDATA[
+  var URLs = {
+    &#39;login&#39;:  &#39;https://marvel.com/signin?referer=http%3A%2F%2Fwww.marvel.com%2Fsignin&#39;,
+    &#39;signup&#39;: &#39;https://marvel.com/register?referer=http%3A%2F%2Fwww.marvel.com%2Fsignin&#39;,
+    &#39;comicReader&#39;: &#39;&#39;,
+    &#39;rpxWidgetUrl&#39;: &#39;http://widget-cdn.rpxnow.com/js/lib/forge.marvel.com/widget.js&#39;,
+    &#39;rpxWidgetUrlSecure&#39;: &#39;https://rpxnow.com/js/lib/forge.marvel.com/widget.js&#39;
+  };
+// ]]&gt;
+&lt;/script&gt;
+
+        &lt;meta name=&quot;twitter:site&quot; content=&quot;@Marvel&quot; /&gt;
+        &lt;meta property=&quot;og:site_name&quot; content=&quot;Marvel.com&quot; /&gt;
+        &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+        &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot; /&gt;
+        &lt;meta name=&quot;twitter:creator&quot; content=&quot;@Marvel&quot; /&gt;
+        &lt;meta property=&quot;fb:app_id&quot; content=&quot;193166954153103&quot; /&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot; /&gt;
+        &lt;meta name=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;&lt;script type=&quot;text/javascript&quot;&gt;(window.NREUM||(NREUM={})).init={ajax:{deny_list:[&quot;bam-cell.nr-data.net&quot;]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:&quot;77ea7d863b&quot;,applicationID:&quot;50915117&quot;};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if(&quot;function&quot;==typeof __nr_require)return __nr_require;for(var i=0;i&lt;n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability(&quot;API/&quot;+e+&quot;/called&quot;),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t(&quot;handle&quot;),a=t(10),c=t(11),f=t(&quot;ee&quot;).get(&quot;tracer&quot;),u=t(&quot;loader&quot;),s=t(4),d=NREUM;&quot;undefined&quot;==typeof window.newrelic&amp;&amp;(newrelic=d);var p=[&quot;setPageViewName&quot;,&quot;setCustomAttribute&quot;,&quot;setErrorHandler&quot;,&quot;finished&quot;,&quot;addToTrace&quot;,&quot;inlineHit&quot;,&quot;addRelease&quot;],l=&quot;api-&quot;,v=l+&quot;ixn-&quot;;a(p,function(t,e){d[e]=i(l,e,!0,&quot;api&quot;)}),d.addPageAction=i(l,&quot;addPageAction&quot;,!0),d.setCurrentRouteName=i(l,&quot;routeName&quot;,!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i=&quot;function&quot;==typeof e;return o(v+&quot;tracer&quot;,[u.now(),t,n],r),function(){if(f.emit((i?&quot;&quot;:&quot;no-&quot;)+&quot;fn-start&quot;,[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit(&quot;fn-err&quot;,[arguments,this,t],n),t}finally{f.emit(&quot;fn-end&quot;,[u.now()],n)}}}};a(&quot;actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get&quot;.split(&quot;,&quot;),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){&quot;string&quot;==typeof t&amp;&amp;(t=new Error(t)),s.recordSupportability(&quot;API/noticeError/called&quot;),o(&quot;err&quot;,[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split(&quot;.&quot;),r=0;r&lt;n.length-1;r++)if(e=e[n[r]],&quot;object&quot;!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},&quot;passive&quot;,{get:function(){r=!0}});window.addEventListener(&quot;testPassive&quot;,null,i),window.removeEventListener(&quot;testPassive&quot;,null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o(&quot;storeMetric&quot;,n,null,&quot;api&quot;),n}function i(t,e){var n=[c,t,{name:t},e];return o(&quot;storeEventMetrics&quot;,n,null,&quot;api&quot;),n}var o=t(&quot;handle&quot;),a=&quot;sm&quot;,c=&quot;cm&quot;;e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&amp;&amp;performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||&quot;file:&quot;===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){&quot;first-paint&quot;===t.name?p(&quot;timing&quot;,[&quot;fp&quot;,Math.floor(t.startTime)]):&quot;first-contentful-paint&quot;===t.name&amp;&amp;p(&quot;timing&quot;,[&quot;fcp&quot;,Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length&gt;0){var r=n[n.length-1];if(f&amp;&amp;f&lt;r.startTime)return;p(&quot;lcp&quot;,[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p(&quot;cls&quot;,[t])})}function a(t){if(t instanceof g&amp;&amp;!y){var e=Math.round(t.timeStamp),n={type:t.type};e&lt;=l.now()?n.fid=l.now()-e:e&gt;l.offset&amp;&amp;e&lt;=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p(&quot;timing&quot;,[&quot;fi&quot;,e,n])}}function c(t){&quot;hidden&quot;===t&amp;&amp;(f=l.now(),p(&quot;pageHide&quot;,[f]))}if(!(&quot;init&quot;in NREUM&amp;&amp;&quot;page_view_timing&quot;in NREUM.init&amp;&amp;&quot;enabled&quot;in NREUM.init.page_view_timing&amp;&amp;NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t(&quot;handle&quot;),l=t(&quot;loader&quot;),v=t(9),m=t(3),g=NREUM.o.EV;if(&quot;PerformanceObserver&quot;in window&amp;&amp;&quot;function&quot;==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:[&quot;paint&quot;]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:[&quot;largest-contentful-paint&quot;]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:&quot;layout-shift&quot;,buffered:!0})}catch(h){}}if(&quot;addEventListener&quot;in document){var y=!1,w=[&quot;click&quot;,&quot;keydown&quot;,&quot;mousedown&quot;,&quot;pointerdown&quot;,&quot;touchstart&quot;];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split(&quot;.&quot;),r=e.split(&quot;.&quot;),a=0;a&lt;r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&amp;&amp;c.indexOf(&quot;Chrome&quot;)===-1&amp;&amp;c.indexOf(&quot;Chromium&quot;)===-1&amp;&amp;(i=&quot;Safari&quot;,o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&amp;&amp;document[c]?document[c]:document[o]?&quot;hidden&quot;:&quot;visible&quot;)}&quot;addEventListener&quot;in document&amp;&amp;a&amp;&amp;document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;&quot;undefined&quot;!=typeof document.hidden?(o=&quot;hidden&quot;,a=&quot;visibilitychange&quot;,c=&quot;visibilityState&quot;):&quot;undefined&quot;!=typeof document.msHidden?(o=&quot;msHidden&quot;,a=&quot;msvisibilitychange&quot;):&quot;undefined&quot;!=typeof document.webkitHidden&amp;&amp;(o=&quot;webkitHidden&quot;,a=&quot;webkitvisibilitychange&quot;,c=&quot;webkitVisibilityState&quot;)},{}],10:[function(t,e,n){function r(t,e){var n=[],r=&quot;&quot;,o=0;for(r in t)i.call(t,r)&amp;&amp;(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),&quot;undefined&quot;==typeof n&amp;&amp;(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i&lt;0?0:i);++r&lt;i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:&quot;undefined&quot;!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;&quot;undefined&quot;!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&amp;&amp;t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&amp;&amp;(a=!0),!l.aborted||o){t&amp;&amp;a&amp;&amp;t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s&lt;u;s++)f[s].apply(c,r);var p=d[w[n]];return p&amp;&amp;p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r&lt;n.length;r++)n[r]===e&amp;&amp;n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||&quot;feature&quot;,w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&amp;&amp;(l.aborted=!0,d=l.backlog={})}var f=&quot;nr@context&quot;,u=t(&quot;gos&quot;),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t(&quot;ee&quot;).get(&quot;handle&quot;);e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||&quot;object&quot;!==e&amp;&amp;&quot;function&quot;!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o=&quot;nr@id&quot;,a=t(&quot;gos&quot;);e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName(&quot;script&quot;)[0];if(setTimeout(u.abort,3e4),!(t&amp;&amp;t.licenseKey&amp;&amp;t.applicationID&amp;&amp;e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c(&quot;mark&quot;,[&quot;onload&quot;,n+P.offset],null,&quot;api&quot;),c(&quot;timing&quot;,[&quot;load&quot;,n]);var r=g.createElement(&quot;script&quot;);0===t.agent.indexOf(&quot;http://&quot;)||0===t.agent.indexOf(&quot;https://&quot;)?r.src=t.agent:r.src=v+&quot;://&quot;+t.agent,e.parentNode.insertBefore(r,e)}}function i(){&quot;complete&quot;===g.readyState&amp;&amp;o()}function o(){c(&quot;mark&quot;,[&quot;domContent&quot;,a()+P.offset],null,&quot;api&quot;)}var a=t(5),c=t(&quot;handle&quot;),f=t(10),u=t(&quot;ee&quot;),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration(&quot;ssl&quot;)===!1?&quot;http&quot;:&quot;https&quot;,m=window,g=m.document,h=&quot;addEventListener&quot;,y=&quot;attachEvent&quot;,w=m.XMLHttpRequest,b=w&amp;&amp;w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=&quot;&quot;+location,O={beacon:&quot;bam.nr-data.net&quot;,errorBeacon:&quot;bam.nr-data.net&quot;,agent:&quot;js-agent.newrelic.com/nr-1212.min.js&quot;},M=w&amp;&amp;b&amp;&amp;b[h]&amp;&amp;!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h](&quot;DOMContentLoaded&quot;,o,l(!1)),m[h](&quot;load&quot;,r,l(!1))):(g[y](&quot;onreadystatechange&quot;,i),m[y](&quot;onload&quot;,r)),c(&quot;mark&quot;,[&quot;firstbyte&quot;,a.getLastTimestamp()],null,&quot;api&quot;);var T=0}},{}],&quot;wrap-function&quot;:[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s=&quot;function&quot;==typeof r?r(o,a):r||{}}catch(l){i([l,&quot;&quot;,[o,a,f],s],t)}c(n+&quot;start&quot;,[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+&quot;err&quot;,[o,a,v],s,u),v}finally{c(n+&quot;end&quot;,[o,a,p],s,u)}}return a(e)?e:(n||(n=&quot;&quot;),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r=&quot;&quot;);var c,f,u,s=&quot;-&quot;===r.charAt(0);for(u=0;u&lt;e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit(&quot;internal-error&quot;,t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&amp;&amp;Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&amp;&amp;(e[a]=t[a]);return e}function a(t){return!(t&amp;&amp;t instanceof Function&amp;&amp;t.apply&amp;&amp;!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n&lt;t;++n)e[n]=arguments[n];return e}var s=t(&quot;ee&quot;),d=t(11),p=&quot;nr@original&quot;,l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},[&quot;loader&quot;]);&lt;/script&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot; /&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.&quot; /&gt;
+        &lt;meta name=&quot;twitter:description&quot; content=&quot;Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.&quot; /&gt;
+        &lt;meta property=&quot;og:description&quot; content=&quot;Marvel.com is the source for Marvel comics, digital comics, comic strips, and more featuring Iron Man, Spider-Man, Hulk, X-Men and all your favorite superheroes.&quot; /&gt;
+        &lt;meta name=&quot;keywords&quot; content=&quot;&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;/i/css/sass_juggernaut.css&quot; /&gt;
+        &lt;!--[if IE 8]&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;/i/css/sass_juggernaut.export_ie8.css&quot; /&gt;&lt;![endif]--&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;/i/css/developersite.css&quot; /&gt;
+        
+        &lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/jquery1.9.1.js&quot;&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/json2.js&quot;&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/juggernaut.js&quot;&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/mustache.js&quot;&gt;&lt;/script&gt;
+        &lt;!--[if lte IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/html5shiv.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+        &lt;!--[if lte IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/jquery.placeholder.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+        &lt;!--[if lte IE 9]&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/i/js/matchmedia.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+        
+        &lt;title&gt;&lt;/title&gt;
+        
+        
+        &lt;script type=&quot;text/javascript&quot;&gt;
+        (function() {
+           function async_load(){
+        	 	files = new Array();
+        
+                    	for(i in files) {
+        					        s = document.createElement(&#39;script&#39;);
+        					        s.type = files[i].type;
+        					        s.async = files[i].async;
+        					        s.src = files[i].src;
+        					        var x = document.getElementsByTagName(&#39;script&#39;)[0];
+        					        x.parentNode.insertBefore(s, x);
+                		}
+        		}
+        					    if (window.attachEvent) {
+        					        window.attachEvent(&#39;onload&#39;, async_load);
+        					    } else {
+        					        window.addEventListener(&#39;load&#39;, async_load, false);
+        					    }
+        					})();
+        &lt;/script&gt;
+        
+        &lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[
+         var MARVEL_USER ={&quot;islogged&quot;:&quot;0&quot;}
+        	// ]]&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+        
+        var strTrackingCode = &#39;UA-273913-20&#39;;
+        var strUserSegment = &quot;nonmember&quot;;
+        var strPageId = &quot;/404/signin&quot;;
+        
+        
+            var _gaq = _gaq || [];
+        function callAnalytics(trackingCode, userSegment, trackPage, transactionAdd, transactionItem) {
+            _gaq.push([&#39;_setAccount&#39;, trackingCode]);
+            _gaq.push([&#39;_trackPageLoadTime&#39;]);
+            _gaq.push([&#39;_setCustomVar&#39;,1, &quot;user segment&quot;, userSegment, 2]);
+            _gaq.push([&#39;_trackPageview&#39;,trackPage]);
+            _gaq.push([&#39;_setDomainName&#39;, &#39;marvel.com&#39;]);
+            if(transactionAdd != null){
+                if (transactionAdd.length &gt; 0 &amp;&amp; transactionItem.length &gt; 0) {
+                    _gaq.push(transactionAdd);
+                    _gaq.push(transactionItem);
+                    _gaq.push([&#39;_trackTrans&#39;]);
+                }
+            }
+         
+            return false;
+        }
+        
+        
+         (function() {
+            var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
+            ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;;
+            var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        (function() {
+            callAnalytics(strTrackingCode, strUserSegment, strPageId, null, null);
+        })();
+        &lt;/script&gt;
+        
+&lt;link href=&quot;https://plus.google.com/108523337373444601877/posts&quot; rel=&quot;publisher&quot; /&gt;
+&lt;meta name=&quot;msapplication-TileImage&quot; content=&quot;/i/images/logo.png&quot; /&gt;
+&lt;/head&gt;
+
+    &lt;body id=&quot;error-error&quot;&gt;
+
+
+&lt;header&gt;
+                      
+
+      &lt;script type=&quot;text/javascript&quot;&gt;
+  (function loadMarvelWidgets(doc, win) {
+    var script = doc.createElement(&#39;script&#39;);
+    script.type = &#39;text/javascript&#39;;
+    script.src = &#39;//www.marvel.com/static/widget/navigation.js&#39;;
+    doc.getElementsByTagName(&#39;head&#39;)[0].appendChild(script);
+    win.onMarvelNavigationWidget = function (widget) {
+      widget.load({
+        baseURL: &#39;//www.marvel.com&#39;,
+        selectors: {
+          navTop: &#39;#marvel-widget-header&#39;,
+          navFtr: &#39;#marvel-widget-footer&#39;
+        },
+      });
+    };
+  })(document, window);
+&lt;/script&gt;
+
+&lt;div id=&quot;marvel-widget-header&quot;&gt;&lt;/div&gt;
+  
+                              &lt;div id=&quot;marvel_subnav_wrapper&quot;&gt;
+                      &lt;div id=&quot;marvel_subnav&quot;&gt;
+                        &lt;span id=&quot;marvel_subnav_li&quot;&gt;&lt;a&gt;Developer Portal&lt;/a&gt;&lt;/span&gt;
+                        &lt;div id=&quot;marvel_subnav_div&quot;&gt;
+                          &lt;ul id=&quot;marvel_subnav_ul&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;//developer.marvel.com/&quot;&gt;Developer Portal&lt;/a&gt; &lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+                            &lt;li class=&quot;dropdown-container&quot;&gt;
+                              &lt;a &gt;How-Tos&lt;/a&gt;
+                                &lt;div class=&quot;dropdown&quot;&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/getting_started&quot;&gt;Getting Started&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/generalinfo&quot;&gt;General Information&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/apiresults&quot;&gt;API Results&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/entity_types&quot;&gt;Entity Types&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/authorization&quot;&gt;Authorization&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/attribution&quot;&gt;Attribution &amp;amp; Rate Limits&lt;/a&gt;
+                                  &lt;a href=&quot;//developer.marvel.com/documentation/images&quot;&gt;Images&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                    
+                              &lt;li&gt;&lt;a href=&quot;//developer.marvel.com/docs&quot; &gt;Interactive Documentation&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;//developer.marvel.com/account&quot; &gt;Get a Key&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;https://help.marvel.com&quot; &gt;Help&lt;/a&gt;&lt;/li&gt;
+                              &lt;li&gt;&lt;a href=&quot;//developer.marvel.com/news_and_updates&quot; &gt;News and Updates&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+  
+&lt;/header&gt;
+
+                    &lt;div class=&quot;module moduColor_Light no-stripes&quot;&gt;
+                        &lt;div class=&quot;grid-container&quot;&gt;
+                            &lt;h1 class=&quot;header-sprite mainheader-404 module-header&quot;&gt;Page Not Found&lt;/h1&gt;
+                            &lt;div class=&quot;message&quot;&gt;
+                                &lt;h2&gt;OH NO!!&lt;/h2&gt;
+                                &lt;p&gt;The page you&#39;re looking for appears to have gone missing! It&#39;s possible that it has been removed, changed or might be temporarily unavailable, but fear not, we&#39;ve got our best guys on it. In the mean time... 
+                                &lt;/p&gt;
+                                &lt;p&gt;&lt;strong&gt;Below are some suggestions to help you find what you&#39;re looking for:&lt;/strong&gt;&lt;/p&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;Make sure you typed in the page address correctly within the Address bar.&lt;/li&gt;
+                                    &lt;li&gt;Enter a term into the search box below to look for additional information on our site:&lt;/li&gt;
+                                &lt;/ul&gt;
+                                
+                                &lt;p&gt;&lt;strong&gt;You may also have better luck on one of these pages:&lt;/strong&gt;&lt;/p&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://developer.marvel.com/&quot; title=&quot;Developer Portal Home&quot;&gt;Developer Portal Home&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://www.marvel.com/&quot; title=&quot;Marvel.com Home&quot;&gt;Marvel.com Home&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://www.marvel.com/characters&quot; title=&quot;Marvel Characters&quot;&gt;Marvel Characters&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://www.marvel.com/movies_and_tv&quot; title=&quot;Marvel Movies &amp; TV&quot;&gt;Marvel Movies &amp; TV&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://www.marvel.com/digital_comics&quot; title=&quot;Marvel Digital Comics&quot;&gt;Marvel Digital Comics&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href=&quot;http://subscriptions.marvel.com&quot; title=&quot;Subscribe to Print Comics&quot;
+                                        &gt;Subscribe to Print Comics&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+&lt;div id=&quot;marvel-widget-footer&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Google Code for AVX Homepage Visit Remarketing List --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/* &lt;![CDATA[ */
+var google_conversion_id = 951293568;
+var google_conversion_language = &quot;en&quot;;
+var google_conversion_format = &quot;3&quot;;
+var google_conversion_color = &quot;ffffff&quot;;
+var google_conversion_label = &quot;4s7QCPDyoQMQgK3OxQM&quot;;
+var google_conversion_value = 0;
+/* ]]&gt; */
+&lt;/script&gt;
+
+&lt;div class=&quot;footer_googleadservices_wrapper&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//www.googleadservices.com/pagead/conversion.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;
+  &lt;div style=&quot;display:inline;&quot;&gt;
+    &lt;img height=&quot;1&quot; width=&quot;1&quot; style=&quot;border-style:none;&quot; alt=&quot;&quot; src=&quot;//www.googleadservices.com/pagead/conversion/951293568/?label=4s7QCPDyoQMQgK3OxQM&amp;amp;guid=ON&amp;amp;script=0&quot;/&gt;
+  &lt;/div&gt;
+&lt;/noscript&gt;
+&lt;/div&gt;
+
+
+
+        
+
+&lt;script type=&quot;text/javascript&quot;&gt;window.NREUM||(NREUM={});NREUM.info={&quot;beacon&quot;:&quot;bam-cell.nr-data.net&quot;,&quot;licenseKey&quot;:&quot;77ea7d863b&quot;,&quot;applicationID&quot;:&quot;50915117&quot;,&quot;transactionName&quot;:&quot;b1FXYkYFWUcEBUNaClYbdFVADVhaSgJSVQRNWEEZURZFWxdJUkEXV0Y=&quot;,&quot;queueTime&quot;:0,&quot;applicationTime&quot;:723,&quot;atts&quot;:&quot;QxZUFA4fSkk=&quot;,&quot;errorBeacon&quot;:&quot;bam-cell.nr-data.net&quot;,&quot;agent&quot;:&quot;&quot;}&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status: 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
