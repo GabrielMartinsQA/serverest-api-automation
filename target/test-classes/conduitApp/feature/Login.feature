@@ -31,7 +31,7 @@ Feature: Tests for login
     Then status 401
     And print 'Response is: ', response
 
-  Scenario: Login into the application with incorrect credentials
+  Scenario: Login into the application with both incorrect credentials
     Given path 'login'
     And request { "email": "fulanoqa@qaqaqa.com.br", "password": "teste123" }
     When method post
@@ -51,3 +51,10 @@ Feature: Tests for login
     When method post
     Then status 400
     And print 'Response is: ', response
+
+    Scenario: Login into the application with an incorrect email and with no passwword
+      Given path 'Login'
+      And request { "email": "fulaninho@qa.com", "password": "" }
+      When method post
+      Then status 400
+      And print 'Response is: ', response
