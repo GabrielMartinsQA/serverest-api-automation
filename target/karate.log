@@ -29110,3 +29110,1318 @@ src/test/java/conduitApp/feature/Users.feature:23
 }
  
 00:09:19.051 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:31:21.579 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:31:21.592 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981081592
+13:31:21.624 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 33 - ^get user by password$
+13:31:22.735 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:31:23.279 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?password=teste
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:31:23.650 [main] DEBUG com.intuit.karate - response time in milliseconds: 366
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:28:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 2135
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 6a03f5cc-5217-4933-b21f-17f6e0bd83d0
+{
+    "quantidade": 10,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Bia",
+            "email": "bia@bdd.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "4YIF75nV6aoBcfDe"
+        },
+        {
+            "nome": "Daniel Lucas dos Santos",
+            "email": "daniel.lucas@gmail.com",
+            "password": "teste123",
+            "administrador": "false",
+            "_id": "GOpfpZDkNXi5Pewp"
+        },
+        {
+            "nome": "Niko",
+            "email": "Caden@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "J6D6y525xGNzRH4a"
+        },
+        {
+            "nome": "Beaulah",
+            "email": "Josh@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "KJxN5uUQ3p5kOR3j"
+        },
+        {
+            "nome": "Joao de Barro da Silva",
+            "email": "paulo.martinssssddhtht@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "R24pkZgRpVVbOJ21"
+        },
+        {
+            "nome": "Joao de Barro da Silva",
+            "email": "paulo.martinssssdddd@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Z8izb7ZUe56nP9l4"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "fpLRFIJw4ckr2847"
+        },
+        {
+            "nome": "Myrl",
+            "email": "Quinton@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "qbaIBVcSERhi2lA3"
+        },
+        {
+            "nome": "Bia",
+            "email": "bia@bd.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "vD9AK43JATuCFaDq"
+        }
+    ]
+}
+13:31:23.672 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "quantidade": 10,
+  "usuarios": [
+    {
+      "nome": "Fulano da Silva",
+      "email": "fulano@qa.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "0uxuPY0cbmQhpEz1"
+    },
+    {
+      "nome": "Bia",
+      "email": "bia@bdd.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "4YIF75nV6aoBcfDe"
+    },
+    {
+      "nome": "Daniel Lucas dos Santos",
+      "email": "daniel.lucas@gmail.com",
+      "password": "teste123",
+      "administrador": "false",
+      "_id": "GOpfpZDkNXi5Pewp"
+    },
+    {
+      "nome": "Niko",
+      "email": "Caden@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "J6D6y525xGNzRH4a"
+    },
+    {
+      "nome": "Beaulah",
+      "email": "Josh@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "KJxN5uUQ3p5kOR3j"
+    },
+    {
+      "nome": "Joao de Barro da Silva",
+      "email": "paulo.martinssssddhtht@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "R24pkZgRpVVbOJ21"
+    },
+    {
+      "nome": "Joao de Barro da Silva",
+      "email": "paulo.martinssssdddd@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "Z8izb7ZUe56nP9l4"
+    },
+    {
+      "nome": "Fulano da Silva",
+      "email": "beltrano@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "fpLRFIJw4ckr2847"
+    },
+    {
+      "nome": "Myrl",
+      "email": "Quinton@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "qbaIBVcSERhi2lA3"
+    },
+    {
+      "nome": "Bia",
+      "email": "bia@bd.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "vD9AK43JATuCFaDq"
+    }
+  ]
+}
+ 
+13:31:24.217 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:36:06.926 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:36:06.932 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981366932
+13:36:06.967 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 40 - ^get user by administrator$
+13:36:07.783 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:36:08.255 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?administrador=true
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:36:08.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 424
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:32:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 6833
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: f851c1cf-323c-428e-aac3-3cd54332ce85
+{
+    "quantidade": 32,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Bia",
+            "email": "bia@bdd.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "4YIF75nV6aoBcfDe"
+        },
+        {
+            "nome": "Lilla",
+            "email": "Tremaine13@gmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "5AkEcK9ffMlyLuXB"
+        },
+        {
+            "nome": "Damon Murray",
+            "email": "damonmurray@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "77MB0gzouF6afr3Y"
+        },
+        {
+            "nome": "Asha",
+            "email": "Mariana75@hotmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "9EwnA3qJ3TkqWBB8"
+        },
+        {
+            "nome": "Natalie",
+            "email": "Jayce_Monahan3@gmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "CgxFZAL70HQJ7ol5"
+        },
+        {
+            "nome": "Harley",
+            "email": "Amelia.Feil99@hotmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "DKTEdsiGkj1lfzma"
+        },
+        {
+            "nome": "Sallie",
+            "email": "Trenton_Beahan34@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "DuXJUufQAtC6nGKN"
+        },
+        {
+            "nome": "Teste2",
+            "email": "teste2@teste.com",
+            "password": "123",
+            "administrador": "true",
+            "_id": "EC2PIrxMOvIJ65br"
+        },
+        {
+            "nome": "Teste",
+            "email": "teste@teste.com",
+            "password": "123",
+            "administrador": "true",
+            "_id": "FJu2ty4jeEtZjGqI"
+        },
+        {
+            "nome": "Alegrissimo da Vida",
+            "email": "alegrissimooooppoopohtht@qa.com.br",
+            "password": "happy",
+            "administrador": "true",
+            "_id": "GLKTXIUM9C9q1QWO"
+        },
+        {
+            "nome": "Niko",
+            "email": "Caden@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "J6D6y525xGNzRH4a"
+        },
+        {
+            "nome": "Beaulah",
+            "email": "Josh@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "KJxN5uUQ3p5kOR3j"
+        },
+        {
+            "nome": "Frederick",
+            "email": "Toni.Krajcik48@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "Km2kCbpGl6LXlYn8"
+        },
+        {
+            "nome": "Joao de Barro da Silva",
+            "email": "paulo.martinssssddhtht@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "R24pkZgRpVVbOJ21"
+        },
+        {
+            "nome": "Alegrissimo da Vida",
+            "email": "alegrissimooooppoopohthth@qa.com.br",
+            "password": "happy",
+            "administrador": "true",
+            "_id": "X0lFylNLd2Mj7vkl"
+        },
+        {
+            "nome": "Joao de Barro da Silva",
+            "email": "paulo.martinssssdddd@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Z8izb7ZUe56nP9l4"
+        },
+        {
+            "nome": "Adelle",
+            "email": "Archibald68@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "aPo8Qe3XLf9dfRET"
+        },
+        {
+            "nome": "Anna",
+            "email": "Citlalli.Gusikowski58@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "aupWO6PJuXNizCx0"
+        },
+        {
+            "nome": "Will",
+            "email": "Shyanne18@gmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "cuUk07ucTWUIxdGr"
+        },
+        {
+            "nome": "Chasity",
+            "email": "Else_Tillman18@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "ea225CxHraaih2tX"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "fpLRFIJw4ckr2847"
+        },
+        {
+            "nome": "Geovany",
+            "email": "Grady.Wunsch@hotmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "jGLEPqx66FYgLHAm"
+        },
+        {
+            "nome": "Harold",
+            "email": "Marjorie37@gmail.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "nXp1J49G0DNCMM1x"
+        },
+        {
+            "nome": "Alegrissimo da Vida",
+            "email": "alegrissimooooppoopohth@qa.com.br",
+            "password": "happy",
+            "administrador": "true",
+            "_id": "oUt1pmMcvP4Mp0Oc"
+        },
+        {
+            "nome": "Myrl",
+            "email": "Quinton@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "qbaIBVcSERhi2lA3"
+        },
+        {
+            "nome": "Alegrissimo da Vida",
+            "email": "alegrissimooooppoopo@qa.com.br",
+            "password": "happy",
+            "administrador": "true",
+            "_id": "rgEFSblVp2Fc3H3S"
+        },
+        {
+            "nome": "Alexie",
+            "email": "Matt.Murray@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "uPbrb3fa79g6UTnx"
+        },
+        {
+            "nome": "Bia",
+            "email": "bia@bd.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "vD9AK43JATuCFaDq"
+        },
+        {
+            "nome": "Alegrissimo da Vida",
+            "email": "alegrissimooooppoopohh@qa.com.br",
+            "password": "happy",
+            "administrador": "true",
+            "_id": "wDenliJQIy5w6XaT"
+        },
+        {
+            "nome": "Sue Feest",
+            "email": "suefeest@test.com",
+            "password": "Test;123",
+            "administrador": "true",
+            "_id": "wvhS050FynxwaVXN"
+        },
+        {
+            "nome": "Zachery",
+            "email": "Sienna.Schamberger22@yahoo.com",
+            "password": "undefined",
+            "administrador": "true",
+            "_id": "xCoGz9YMiTvNdxij"
+        }
+    ]
+}
+13:36:08.693 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "quantidade": 32,
+  "usuarios": [
+    {
+      "nome": "Fulano da Silva",
+      "email": "fulano@qa.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "0uxuPY0cbmQhpEz1"
+    },
+    {
+      "nome": "Bia",
+      "email": "bia@bdd.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "4YIF75nV6aoBcfDe"
+    },
+    {
+      "nome": "Lilla",
+      "email": "Tremaine13@gmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "5AkEcK9ffMlyLuXB"
+    },
+    {
+      "nome": "Damon Murray",
+      "email": "damonmurray@test.com",
+      "password": "Test;123",
+      "administrador": "true",
+      "_id": "77MB0gzouF6afr3Y"
+    },
+    {
+      "nome": "Asha",
+      "email": "Mariana75@hotmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "9EwnA3qJ3TkqWBB8"
+    },
+    {
+      "nome": "Natalie",
+      "email": "Jayce_Monahan3@gmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "CgxFZAL70HQJ7ol5"
+    },
+    {
+      "nome": "Harley",
+      "email": "Amelia.Feil99@hotmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "DKTEdsiGkj1lfzma"
+    },
+    {
+      "nome": "Sallie",
+      "email": "Trenton_Beahan34@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "DuXJUufQAtC6nGKN"
+    },
+    {
+      "nome": "Teste2",
+      "email": "teste2@teste.com",
+      "password": "123",
+      "administrador": "true",
+      "_id": "EC2PIrxMOvIJ65br"
+    },
+    {
+      "nome": "Teste",
+      "email": "teste@teste.com",
+      "password": "123",
+      "administrador": "true",
+      "_id": "FJu2ty4jeEtZjGqI"
+    },
+    {
+      "nome": "Alegrissimo da Vida",
+      "email": "alegrissimooooppoopohtht@qa.com.br",
+      "password": "happy",
+      "administrador": "true",
+      "_id": "GLKTXIUM9C9q1QWO"
+    },
+    {
+      "nome": "Niko",
+      "email": "Caden@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "J6D6y525xGNzRH4a"
+    },
+    {
+      "nome": "Beaulah",
+      "email": "Josh@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "KJxN5uUQ3p5kOR3j"
+    },
+    {
+      "nome": "Frederick",
+      "email": "Toni.Krajcik48@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "Km2kCbpGl6LXlYn8"
+    },
+    {
+      "nome": "Joao de Barro da Silva",
+      "email": "paulo.martinssssddhtht@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "R24pkZgRpVVbOJ21"
+    },
+    {
+      "nome": "Alegrissimo da Vida",
+      "email": "alegrissimooooppoopohthth@qa.com.br",
+      "password": "happy",
+      "administrador": "true",
+      "_id": "X0lFylNLd2Mj7vkl"
+    },
+    {
+      "nome": "Joao de Barro da Silva",
+      "email": "paulo.martinssssdddd@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "Z8izb7ZUe56nP9l4"
+    },
+    {
+      "nome": "Adelle",
+      "email": "Archibald68@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "aPo8Qe3XLf9dfRET"
+    },
+    {
+      "nome": "Anna",
+      "email": "Citlalli.Gusikowski58@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "aupWO6PJuXNizCx0"
+    },
+    {
+      "nome": "Will",
+      "email": "Shyanne18@gmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "cuUk07ucTWUIxdGr"
+    },
+    {
+      "nome": "Chasity",
+      "email": "Else_Tillman18@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "ea225CxHraaih2tX"
+    },
+    {
+      "nome": "Fulano da Silva",
+      "email": "beltrano@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "fpLRFIJw4ckr2847"
+    },
+    {
+      "nome": "Geovany",
+      "email": "Grady.Wunsch@hotmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "jGLEPqx66FYgLHAm"
+    },
+    {
+      "nome": "Harold",
+      "email": "Marjorie37@gmail.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "nXp1J49G0DNCMM1x"
+    },
+    {
+      "nome": "Alegrissimo da Vida",
+      "email": "alegrissimooooppoopohth@qa.com.br",
+      "password": "happy",
+      "administrador": "true",
+      "_id": "oUt1pmMcvP4Mp0Oc"
+    },
+    {
+      "nome": "Myrl",
+      "email": "Quinton@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "qbaIBVcSERhi2lA3"
+    },
+    {
+      "nome": "Alegrissimo da Vida",
+      "email": "alegrissimooooppoopo@qa.com.br",
+      "password": "happy",
+      "administrador": "true",
+      "_id": "rgEFSblVp2Fc3H3S"
+    },
+    {
+      "nome": "Alexie",
+      "email": "Matt.Murray@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "uPbrb3fa79g6UTnx"
+    },
+    {
+      "nome": "Bia",
+      "email": "bia@bd.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "vD9AK43JATuCFaDq"
+    },
+    {
+      "nome": "Alegrissimo da Vida",
+      "email": "alegrissimooooppoopohh@qa.com.br",
+      "password": "happy",
+      "administrador": "true",
+      "_id": "wDenliJQIy5w6XaT"
+    },
+    {
+      "nome": "Sue Feest",
+      "email": "suefeest@test.com",
+      "password": "Test;123",
+      "administrador": "true",
+      "_id": "wvhS050FynxwaVXN"
+    },
+    {
+      "nome": "Zachery",
+      "email": "Sienna.Schamberger22@yahoo.com",
+      "password": "undefined",
+      "administrador": "true",
+      "_id": "xCoGz9YMiTvNdxij"
+    }
+  ]
+}
+ 
+13:36:09.162 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:36:28.837 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:36:28.843 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981388842
+13:36:28.872 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 40 - ^get user by administrator$
+13:36:29.784 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:36:30.241 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?administrador=false
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:36:30.674 [main] DEBUG com.intuit.karate - response time in milliseconds: 428
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:33:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1069
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: c598ca4c-37d3-4041-b06e-556215d480c0
+{
+    "quantidade": 5,
+    "usuarios": [
+        {
+            "nome": "Phao",
+            "email": "phao@teste.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "6Gd5So0Xl4Ufy3xj"
+        },
+        {
+            "nome": "Teste4",
+            "email": "teste4@teste.com",
+            "password": "123",
+            "administrador": "false",
+            "_id": "6PODll4k8xBaL6ZN"
+        },
+        {
+            "nome": "Teste3",
+            "email": "teste3@teste.com",
+            "password": "123",
+            "administrador": "false",
+            "_id": "C5VhSS7ofe0GlhMv"
+        },
+        {
+            "nome": "Daniel Lucas dos Santos",
+            "email": "daniel.lucas@gmail.com",
+            "password": "teste123",
+            "administrador": "false",
+            "_id": "GOpfpZDkNXi5Pewp"
+        },
+        {
+            "nome": "teste1",
+            "email": "teste1@teste.com",
+            "password": "123",
+            "administrador": "false",
+            "_id": "iNoX1cGlPu5IbYns"
+        }
+    ]
+}
+13:36:30.695 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "quantidade": 5,
+  "usuarios": [
+    {
+      "nome": "Phao",
+      "email": "phao@teste.com",
+      "password": "123456",
+      "administrador": "false",
+      "_id": "6Gd5So0Xl4Ufy3xj"
+    },
+    {
+      "nome": "Teste4",
+      "email": "teste4@teste.com",
+      "password": "123",
+      "administrador": "false",
+      "_id": "6PODll4k8xBaL6ZN"
+    },
+    {
+      "nome": "Teste3",
+      "email": "teste3@teste.com",
+      "password": "123",
+      "administrador": "false",
+      "_id": "C5VhSS7ofe0GlhMv"
+    },
+    {
+      "nome": "Daniel Lucas dos Santos",
+      "email": "daniel.lucas@gmail.com",
+      "password": "teste123",
+      "administrador": "false",
+      "_id": "GOpfpZDkNXi5Pewp"
+    },
+    {
+      "nome": "teste1",
+      "email": "teste1@teste.com",
+      "password": "123",
+      "administrador": "false",
+      "_id": "iNoX1cGlPu5IbYns"
+    }
+  ]
+}
+ 
+13:36:31.247 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:41:40.428 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:41:40.434 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981700434
+13:41:40.464 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 12 - ^Get user by id$
+13:41:41.397 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:41:41.878 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?_id=0uxuPY0cbmQhpEz1
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:41:42.191 [main] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:38:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 253
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 15a18658-9f24-4164-8970-ff3ab9050a15
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+13:41:42.207 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "quantidade": 1,
+  "usuarios": [
+    {
+      "nome": "Fulano da Silva",
+      "email": "fulano@qa.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "0uxuPY0cbmQhpEz1"
+    }
+  ]
+}
+ 
+13:41:42.685 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:42:26.484 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:26.490 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981746489
+13:42:26.519 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 47 - ^get user by id with an incorrect id$
+13:42:27.373 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:27.848 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?id=0uxuPY0cbmQhp
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:42:28.176 [main] DEBUG com.intuit.karate - response time in milliseconds: 324
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:39:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 68ff32e4-250d-480e-a557-a5abeea6d0f1
+{
+    "id": "id não é permitido"
+}
+13:42:28.189 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "id": "id não é permitido"
+}
+ 
+13:42:28.672 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:46:11.885 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:46:11.891 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638981971890
+13:46:11.919 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 47 - ^get user by id with an incorrect id$
+13:46:12.839 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:46:13.286 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?id=0uxuPY0cbmQhp
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:46:13.595 [main] DEBUG com.intuit.karate - response time in milliseconds: 307
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:42:54 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: c169af92-75d5-42da-81f7-fcc166d0734c
+{
+    "id": "id não é permitido"
+}
+13:46:13.604 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "id": "id não é permitido"
+}
+ 
+13:46:13.607 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:53
+And match response '"id": "id não é permitido"'
+no step-definition method match found for: match response '"id": "id não é permitido"'
+src/test/java/conduitApp/feature/Users.feature:53
+13:46:14.076 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:47:06.833 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:47:06.839 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982026838
+13:47:06.875 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 47 - ^get user by id with an incorrect id$
+13:47:07.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:47:08.391 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?id=0uxuPY0cbmQhp
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:47:08.741 [main] DEBUG com.intuit.karate - response time in milliseconds: 346
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:43:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 371e84fb-a8c1-413c-9ffe-541621b16909
+{
+    "id": "id não é permitido"
+}
+13:47:08.760 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "id": "id não é permitido"
+}
+ 
+13:47:09.658 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:49:45.994 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:46.001 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982186000
+13:49:46.026 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 55 - ^get user by name with an incorrect name$
+13:49:46.934 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:47.383 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=gabriel+martins
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:49:47.681 [main] DEBUG com.intuit.karate - response time in milliseconds: 295
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:46:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 87150de4-2b56-415c-96e2-d1e291ae08f6
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+13:49:47.687 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:59
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 295, url: https://serverest.dev/usuarios?nome=gabriel+martins, response: 
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+src/test/java/conduitApp/feature/Users.feature:59
+13:49:48.172 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:49:58.180 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:58.187 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982198187
+13:49:58.220 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 55 - ^get user by name with an incorrect name$
+13:49:59.183 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:59.633 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=gabriel+martins
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:49:59.945 [main] DEBUG com.intuit.karate - response time in milliseconds: 307
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:46:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: a9fdb00f-add3-43ae-a218-54106c06430c
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+13:49:59.955 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:59
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 307, url: https://serverest.dev/usuarios?nome=gabriel+martins, response: 
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+src/test/java/conduitApp/feature/Users.feature:59
+13:50:00.442 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:50:11.491 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:50:11.499 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982211498
+13:50:11.531 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 55 - ^get user by name with an incorrect name$
+13:50:12.450 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:50:12.904 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?name=gabriel+martins
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:50:13.220 [main] DEBUG com.intuit.karate - response time in milliseconds: 312
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:46:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: da9302a4-8fbb-4c35-b180-8879d6e6740f
+{
+    "name": "name não é permitido"
+}
+13:50:13.231 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:59
+Then status 401
+status code was: 400, expected: 401, response time in milliseconds: 312, url: https://serverest.dev/usuarios?name=gabriel+martins, response: 
+{
+    "name": "name não é permitido"
+}
+src/test/java/conduitApp/feature/Users.feature:59
+13:50:13.721 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:50:39.772 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:50:39.779 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982239778
+13:50:39.816 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 55 - ^get user by name with an incorrect name$
+13:50:40.731 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:50:41.221 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?name=gabriel+martins
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:50:41.533 [main] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:47:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 78a185ea-0469-4993-b63a-065b9f8d1544
+{
+    "name": "name não é permitido"
+}
+13:50:41.549 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "name": "name não é permitido"
+}
+ 
+13:50:42.034 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:51:21.513 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:21.519 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982281518
+13:51:21.555 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 55 - ^get user by name with an incorrect name$
+13:51:22.504 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:22.980 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?name=gabriel+martins
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:51:23.307 [main] DEBUG com.intuit.karate - response time in milliseconds: 323
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:48:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 5a604d8e-8096-4778-813c-672bee7068ff
+{
+    "name": "name não é permitido"
+}
+13:51:23.322 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "name": "name não é permitido"
+}
+ 
+13:51:23.804 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:56:08.504 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:56:08.508 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982568508
+13:56:08.531 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 63 - ^get user by email with an incorrect email$
+13:56:09.397 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:56:09.856 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?email=gabrielqa%40tester.com.br
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:56:10.179 [main] DEBUG com.intuit.karate - response time in milliseconds: 320
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:52:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: e9f8b22b-e974-4a53-8ac4-c8159a10dd01
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+13:56:10.185 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:67
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 320, url: https://serverest.dev/usuarios?email=gabrielqa%40tester.com.br, response: 
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+src/test/java/conduitApp/feature/Users.feature:67
+13:56:10.677 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:56:56.876 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:56:56.886 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982616884
+13:56:56.933 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 63 - ^get user by email with an incorrect email$
+13:56:57.993 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:56:58.471 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?email=gabrielqa%40tester.com.br
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:56:58.795 [main] DEBUG com.intuit.karate - response time in milliseconds: 321
+1 < 200
+1 < Date: Wed, 08 Dec 2021 16:53:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 4a178d23-78d2-43ce-8920-6843ca994a9e
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+13:56:58.804 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "quantidade": 0,
+  "usuarios": [
+  ]
+}
+ 
+13:56:58.815 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:69
+And match response == { "email" : "email não é permitido" }
+match failed: EQUALS
+  $ | not equal | actual has 1 more key(s) than expected - {"quantidade":0,"usuarios":[]} (MAP:MAP)
+  {"quantidade":0,"usuarios":[]}
+  {"email":"email não é permitido"}
+
+
+src/test/java/conduitApp/feature/Users.feature:69
+13:56:59.330 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:58:39.984 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:58:39.989 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982719988
+13:58:40.013 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 63 - ^get user by email with an invalid email$
+13:58:40.940 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:58:41.438 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?email=gabrielqa.tester.com.br
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:58:41.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 301
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:55:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 6fbed7f6-0c54-4011-b153-3ad049babdd8
+{
+    "email": "email deve ser um email válido"
+}
+13:58:41.746 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:67
+Then status 401
+status code was: 400, expected: 401, response time in milliseconds: 301, url: https://serverest.dev/usuarios?email=gabrielqa.tester.com.br, response: 
+{
+    "email": "email deve ser um email válido"
+}
+src/test/java/conduitApp/feature/Users.feature:67
+13:58:42.234 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:58:53.031 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:58:53.037 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982733036
+13:58:53.065 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 63 - ^get user by email with an invalid email$
+13:58:54.000 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:58:54.461 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?email=gabrielqa.tester.com.br
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:58:54.774 [main] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:55:35 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: baeaff43-2663-4ab7-818b-e05928389d8f
+{
+    "email": "email deve ser um email válido"
+}
+13:58:54.791 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+13:58:54.803 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Users.feature:69
+And match response == { "email" : "email não é permitido" }
+match failed: EQUALS
+  $ | not equal | match failed for name: 'email' (MAP:MAP)
+  {"email":"email deve ser um email válido"}
+  {"email":"email não é permitido"}
+
+    $.email | not equal (STRING:STRING)
+    'email deve ser um email válido'
+    'email não é permitido'
+
+src/test/java/conduitApp/feature/Users.feature:69
+13:58:55.268 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+13:59:19.370 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:59:19.377 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1638982759376
+13:59:19.414 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 63 - ^get user by email with an invalid email$
+13:59:20.337 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:59:20.798 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?email=gabrielqa.tester.com.br
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:59:21.121 [main] DEBUG com.intuit.karate - response time in milliseconds: 319
+1 < 400
+1 < Date: Wed, 08 Dec 2021 16:56:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 7bb8a623-8166-4215-9533-a43cdf588b21
+{
+    "email": "email deve ser um email válido"
+}
+13:59:21.138 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+13:59:21.645 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature

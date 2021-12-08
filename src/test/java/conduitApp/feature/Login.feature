@@ -52,7 +52,7 @@ Feature: Tests for login
     Then status 400
     And print 'Response is: ', response
 
-    Scenario: Login into the application with an incorrect email and with no passwword
+    Scenario: Login into the application with an incorrect email and with no password
       Given path 'Login'
       And request { "email": "fulaninho@qa.com", "password": "" }
       When method post
