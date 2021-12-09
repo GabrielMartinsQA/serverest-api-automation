@@ -12,7 +12,7 @@ Feature: Tests for login
     Then status 200
     And print 'Response is: ', response
 
-  Scenario Outline: Login into the application with an invalid email
+  Scenario Outline: Failure when logging into the application
     * def yaml = data.POST_LOGIN.negative
     * def body = yaml.<scenario>
     * def valid_response = yaml.<valid_status>
@@ -22,42 +22,11 @@ Feature: Tests for login
     Then status <status_code>
     And match response == valid_response
 
-    Examples:
-      | scenario        | valid_status                   | status_code |
-      | invalid_login   | valid_response_invalid_login   | 400         |
-      | incorrect_login | valid_response_incorrect_login | 401         |
-
-  Scenario: Login into the application with an incorrect password
-    Given path 'login'
-    And request { "email": "fulano@qa.com", "password": "testeqaqa" }
-    When method post
-    Then status 401
-    And print 'Response is: ', response
-
-  Scenario: Login into the application with both incorrect credentials
-    Given path 'login'
-    And request { "email": "fulanoqa@qaqaqa.com.br", "password": "teste123" }
-    When method post
-    Then status 401
-    And print 'Response is: ', response
-
-  Scenario: Login into the application without email
-    Given path 'Login'
-    And request { "email": "", "password": "teste" }
-    When method post
-    Then status 400
-    And print 'Response is: ', response
-
-  Scenario: Login into the application without password
-    Given path 'Login'
-    And request { "email": "fulano@qa.com", "password": "" }
-    When method post
-    Then status 400
-    And print 'Response is: ', response
-
-    Scenario: Login into the application with an incorrect email and with no password
-      Given path 'Login'
-      And request { "email": "fulaninho@qa.com", "password": "" }
-      When method post
-      Then status 400
-      And print 'Response is: ', response
+  Examples:
+    | scenario                         | valid_status                                    | status_code |
+    | invalid_login                    | valid_response_invalid_login                    | 400         |
+    | incorrect_login                  | valid_response_incorrect_login                  | 401         |
+    | incorrect_credentials            | valid_response_incorrect_credentials            | 401         |
+    | login_without_email              | valid_response_login_without_email              | 400         |
+    | login_without_password           | valid_response_login_without_password           | 400         |
+    | incorrect_email_without_password | valid_response_incorrect_email_without_password | 400         |

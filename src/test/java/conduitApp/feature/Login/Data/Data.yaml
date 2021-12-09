@@ -6,3 +6,11 @@ POST_LOGIN:
     valid_response_invalid_login: { "email": "email deve ser um email válido" }
     incorrect_login: { "email": "fulano@qaqaqa.com.br", "password": "teste" }
     valid_response_incorrect_login: { "message": "Email e/ou senha inválidos" }
+    incorrect_credentials: { "email": "fulanoqa@qaqaqa.com.br", "password": "teste123" }
+    valid_response_incorrect_credentials: { "message": "Email e/ou senha inválidos" }
+    login_without_email: { "email": "", "password": "teste" }
+    valid_response_login_without_email: { "email": "email não pode ficar em branco" }
+    login_without_passowrd: { "email": "fulano@qa.com", "password": "" }
+    valid_response_login_without_password: { "email": "email é obrigatório","password": "password é obrigatório" }
+    incorrect_email_without_password: { "email": "fulaninho@qa.com", "password": "" }
+    valid_response_incorrect_email_without_password: { "password": "password não pode ficar em branco" }
