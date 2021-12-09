@@ -1,0 +1,8 @@
+POST_LOGIN:
+  positive:
+    valid_login: { "email": "atreus_qa@qa.com.br", "password": "atreus" }
+  negative:
+    invalid_login: { "email": "atreus_qaqa.com.br", "password": "atreus" }
+    valid_response_invalid_login: { "email": "email deve ser um email válido" }
+    incorrect_login: { "email": "fulano@qaqaqa.com.br", "password": "teste" }
+    valid_response_incorrect_login: { "message": "Email e/ou senha inválidos" }

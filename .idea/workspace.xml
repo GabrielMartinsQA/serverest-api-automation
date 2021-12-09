@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65a2dce7-6ad1-4798-8afa-c1ad6338b428" name="Changes" comment="ajuste pra teste login">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Data/Data.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/res/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/res/karate-report.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/res/karate-report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.conduitApp.feature.Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/src.test.java.conduitApp.feature.Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.conduitApp.feature.Login.karate-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/src.test.java.conduitApp.feature.Login.karate-json.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Login.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +56,60 @@
       <recent name="C:\workspace\automation-karate-api\KarateUdemy\src\test\java\conduitApp\feature" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\automation-karate-api\ServeRest\src\test\java\conduitApp\feature\Login" />
       <recent name="C:\workspace\automation-karate-api\KarateUdemy\src\test\java\conduitApp\feature" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: get user by email with an invalid email">
-    <configuration name="Scenario: Get user by id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login into the application with an invalid email">
+    <configuration name="Scenario: Login into the application with an incorrect email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Users.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="ServeRest" />
-      <option name="NAME_FILTER" value="^Get user by id$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Get user by id$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Get user by id" />
+      <option name="NAME_FILTER" value="^Login into the application with an incorrect email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Login into the application with an incorrect email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login into the application with an incorrect email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login into the application with an invalid email" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="ServeRest" />
+      <option name="NAME_FILTER" value="^Login into the application with an invalid email$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Login into the application with an invalid email$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login into the application with an invalid email" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login into the application with right credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="ServeRest" />
+      <option name="NAME_FILTER" value="^Login into the application with right credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Login into the application with right credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login into the application with right credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -127,53 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: get user by id with an incorrect id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Users.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ServeRest" />
-      <option name="NAME_FILTER" value="^get user by id with an incorrect id$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^get user by id with an incorrect id$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: get user by id with an incorrect id" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: get user by name with an incorrect name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Users.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="ServeRest" />
-      <option name="NAME_FILTER" value="^get user by name with an incorrect name$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^get user by name with an incorrect name$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: get user by name with an incorrect name" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Login into the application with an invalid email" />
+        <item itemvalue="Cucumber Java.Scenario: Login into the application with an incorrect email" />
+        <item itemvalue="Cucumber Java.Scenario: Login into the application with right credentials" />
         <item itemvalue="Cucumber Java.Scenario: get user by email with an invalid email" />
         <item itemvalue="Cucumber Java.Scenario: get user by email with an incorrect email" />
-        <item itemvalue="Cucumber Java.Scenario: get user by name with an incorrect name" />
-        <item itemvalue="Cucumber Java.Scenario: get user by id with an incorrect id" />
-        <item itemvalue="Cucumber Java.Scenario: Get user by id" />
       </list>
     </recent_temporary>
   </component>

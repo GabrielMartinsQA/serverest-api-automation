@@ -30425,3 +30425,656 @@ src/test/java/conduitApp/feature/Users.feature:69
 }
  
 13:59:21.645 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Users.feature
+14:04:28.617 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:04:28.646 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639069468645
+14:04:28.702 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Login into the application with right credentials$
+14:04:30.102 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:04:30.162 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:5
+* def data = read('src/test/java/conduitApp/feature/Login/Data/Data.yaml')
+js failed:
+>>>>
+01: read('src/test/java/conduitApp/feature/Login/Data/Data.yaml')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\workspace\automation-karate-api\ServeRest\src\test\java\conduitApp\feature\Login\src\test\java\conduitApp\feature\Login\Data\Data.yaml (O sistema não pode encontrar o caminho especificado)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:71)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+src/test/java/conduitApp/feature/Login/Login.feature:5
+14:04:30.993 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:05:51.229 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:05:51.237 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639069551237
+14:05:51.280 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Login into the application with right credentials$
+14:05:52.440 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:05:53.287 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulano@qa.com","password":"teste"}
+
+14:05:54.052 [main] DEBUG com.intuit.karate - response time in milliseconds: 759
+1 < 401
+1 < Date: Thu, 09 Dec 2021 17:02:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 02fc2a47-b3ac-4f3c-8fba-5d65f2773b16
+{
+    "message": "Email e/ou senha inválidos"
+}
+14:05:54.059 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:12
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 759, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+src/test/java/conduitApp/feature/Login/Login.feature:12
+14:05:54.706 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:07:01.178 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:07:01.183 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639069621183
+14:07:01.223 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Login into the application with right credentials$
+14:07:02.397 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:07:02.569 [main] INFO  com.intuit.karate - [print] {
+  "email": "fulano@qa.com",
+  "password": "teste"
+}
+ 
+14:07:03.062 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulano@qa.com","password":"teste"}
+
+14:07:03.468 [main] DEBUG com.intuit.karate - response time in milliseconds: 402
+1 < 401
+1 < Date: Thu, 09 Dec 2021 17:03:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 3178ff67-8fb4-4810-8198-6eacfe375b1c
+{
+    "message": "Email e/ou senha inválidos"
+}
+14:07:03.470 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:13
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 402, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+src/test/java/conduitApp/feature/Login/Login.feature:13
+14:07:04.107 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:08:37.606 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:08:37.611 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639069717611
+14:08:37.651 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Login into the application with right credentials$
+14:08:38.868 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:08:39.062 [main] INFO  com.intuit.karate - [print] {
+  "email": "atreus_qa@qa.com.br",
+  "password": "atreus"
+}
+ 
+14:08:39.549 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qa@qa.com.br","password":"atreus"}
+
+14:08:39.931 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 200
+1 < Date: Thu, 09 Dec 2021 17:05:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 275
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 62c86227-5cb4-43d2-b8b2-35c42ea3504b
+{
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA2OTcyMCwiZXhwIjoxNjM5MDcwMzIwfQ.B3eTVAqjzWhI5ITQBUUQKn__S2JoLe-O_JlmcDhxd_I"
+}
+14:08:39.936 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "message": "Login realizado com sucesso",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA2OTcyMCwiZXhwIjoxNjM5MDcwMzIwfQ.B3eTVAqjzWhI5ITQBUUQKn__S2JoLe-O_JlmcDhxd_I"
+}
+ 
+14:08:40.637 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:18:04.148 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/conduitApp/feature/Login/Login.feature - mismatched input '<EOF>' expecting TABLE_ROW
+14:18:53.543 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:18:53.548 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070333547
+14:18:53.590 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Login into the application with an invalid email$
+14:18:54.758 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:18:55.455 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulanoqa.com","password":"teste"}
+
+14:18:55.844 [main] DEBUG com.intuit.karate - response time in milliseconds: 384
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:15:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 4ee74fff-f81a-4e2c-aa36-f6b524649789
+{
+    "email": "email deve ser um email válido"
+}
+14:18:55.852 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:18:55.856 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:18:56.613 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:22:53.020 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:22:53.026 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070573025
+14:22:53.072 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Login into the application with an invalid email$
+14:22:54.403 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:55.150 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qa@qa.com.br","password":"atreus"}
+
+14:22:55.627 [main] DEBUG com.intuit.karate - response time in milliseconds: 475
+1 < 200
+1 < Date: Thu, 09 Dec 2021 17:19:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 275
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 52fb6a63-def5-4691-a8e2-4dfd646334f7
+{
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA3MDU3NSwiZXhwIjoxNjM5MDcxMTc1fQ.X7BHNadlx1J-UaTWg6USmktTAepd6b8TJly6M__7goY"
+}
+14:22:55.629 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:21
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 475, url: https://serverest.dev/login, response: 
+{
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA3MDU3NSwiZXhwIjoxNjM5MDcxMTc1fQ.X7BHNadlx1J-UaTWg6USmktTAepd6b8TJly6M__7goY"
+}
+src/test/java/conduitApp/feature/Login/Login.feature:21
+14:22:56.326 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:24:48.336 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:24:48.340 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070688340
+14:24:48.373 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Login into the application with an invalid email$
+14:24:49.451 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:24:49.620 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:16
+* def body = data.POST_LOGIN.negative.negative.invalid_login
+js failed:
+>>>>
+01: data.POST_LOGIN.negative.negative.invalid_login
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property "invalid_login" from undefined
+- <js>.:program(Unnamed:1)
+
+src/test/java/conduitApp/feature/Login/Login.feature:16
+14:24:50.168 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:25:44.687 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:25:44.693 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070744692
+14:25:44.733 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Login into the application with an invalid email$
+14:25:45.680 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:25:46.296 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qa@qa.com.br","password":"atreus"}
+
+14:25:46.651 [main] DEBUG com.intuit.karate - response time in milliseconds: 351
+1 < 200
+1 < Date: Thu, 09 Dec 2021 17:22:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 275
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 748f01d6-ac3f-4c76-8046-2a8b70a3a241
+{
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA3MDc0NiwiZXhwIjoxNjM5MDcxMzQ2fQ.va8-hEFEmJQOF5xS8nMV1HeRSBwpiVzsvXO4AtuuZMY"
+}
+14:25:46.653 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:21
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 351, url: https://serverest.dev/login, response: 
+{
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0cmV1c19xYUBxYS5jb20uYnIiLCJwYXNzd29yZCI6ImF0cmV1cyIsImlhdCI6MTYzOTA3MDc0NiwiZXhwIjoxNjM5MDcxMzQ2fQ.va8-hEFEmJQOF5xS8nMV1HeRSBwpiVzsvXO4AtuuZMY"
+}
+src/test/java/conduitApp/feature/Login/Login.feature:21
+14:25:47.138 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:26:32.466 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:26:32.471 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070792470
+14:26:32.506 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Login into the application with an invalid email$
+14:26:33.461 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:26:34.008 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:26:34.291 [main] DEBUG com.intuit.karate - response time in milliseconds: 280
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:23:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: a9ee5311-9943-40f6-9e31-d6a778bdee25
+{
+    "email": "email deve ser um email válido"
+}
+14:26:34.294 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:26:34.296 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:26:34.307 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:24
+And match response == valid_response_invalid_login
+js failed:
+>>>>
+01: valid_response_invalid_login
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "valid_response_invalid_login" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/conduitApp/feature/Login/Login.feature:24
+14:26:34.819 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:27:32.368 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:27:32.374 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070852373
+14:27:32.411 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Login into the application with an invalid email$
+14:27:33.528 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:27:34.067 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:27:34.342 [main] DEBUG com.intuit.karate - response time in milliseconds: 273
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:24:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 948f0ff1-2305-4713-a1bf-444e4cf9f96a
+{
+    "email": "email deve ser um email válido"
+}
+14:27:34.346 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:27:34.347 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:27:34.358 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:24
+And match response == valid_response_invalid_login
+js failed:
+>>>>
+01: valid_response_invalid_login
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "valid_response_invalid_login" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/conduitApp/feature/Login/Login.feature:24
+14:27:34.834 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:29:29.003 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:29:29.008 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639070969007
+14:29:29.040 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Login into the application with an invalid email$
+14:29:30.052 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:29:30.615 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:29:30.878 [main] DEBUG com.intuit.karate - response time in milliseconds: 262
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:26:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 490a7ad9-0782-48d5-933e-8450116513e5
+{
+    "email": "email deve ser um email válido"
+}
+14:29:30.882 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:29:30.884 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:29:31.431 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:31:58.881 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:31:58.886 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639071118884
+14:31:58.917 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Login into the application with an invalid email$
+14:31:59.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:00.337 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:32:00.687 [main] DEBUG com.intuit.karate - response time in milliseconds: 349
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:28:38 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: bda30a44-954d-4594-bdc3-094b4ff034b3
+{
+    "email": "email deve ser um email válido"
+}
+14:32:00.691 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:32:00.691 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:32:01.216 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:33:40.784 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:33:40.789 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639071220788
+14:33:40.814 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 31 - ^Login into the application with an incorrect email$
+14:33:41.966 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:33:42.604 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/Login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulano@qaqaqa.com.br","password":"teste"}
+
+14:33:42.919 [main] DEBUG com.intuit.karate - response time in milliseconds: 314
+1 < 401
+1 < Date: Thu, 09 Dec 2021 17:30:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 9370a02e-d0f6-435c-ab59-0baa149cd7ca
+{
+    "message": "Email e/ou senha inválidos"
+}
+14:33:42.921 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "message": "Email e/ou senha inválidos"
+}
+ 
+14:33:43.503 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:34:45.316 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:34:45.322 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639071285321
+14:34:45.353 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Login into the application with an invalid email$
+14:34:46.323 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:34:46.854 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:34:47.189 [main] DEBUG com.intuit.karate - response time in milliseconds: 331
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:31:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 71c023ac-2227-4cda-a669-920799f3abee
+{
+    "email": "email deve ser um email válido"
+}
+14:34:47.194 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:34:47.196 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:34:47.206 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Login into the application with an invalid email$
+14:34:47.212 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:34:47.220 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulano@qaqaqa.com.br","password":"teste"}
+
+14:34:47.314 [main] DEBUG com.intuit.karate - response time in milliseconds: 93
+1 < 401
+1 < Date: Thu, 09 Dec 2021 17:31:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: eb8f28d1-03fd-4236-84c5-b5648b522676
+{
+    "message": "Email e/ou senha inválidos"
+}
+14:34:47.315 [main] ERROR com.intuit.karate - src/test/java/conduitApp/feature/Login/Login.feature:22
+Then status 400
+status code was: 401, expected: 400, response time in milliseconds: 93, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+src/test/java/conduitApp/feature/Login/Login.feature:22
+14:34:47.875 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
+14:36:11.790 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:36:11.796 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1639071371795
+14:36:11.839 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Login into the application with an invalid email$
+14:36:12.786 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:36:13.327 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"atreus_qaqa.com.br","password":"atreus"}
+
+14:36:13.626 [main] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 400
+1 < Date: Thu, 09 Dec 2021 17:32:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: a0fb6e37-16d4-48c7-bd6f-8538c6fae0f6
+{
+    "email": "email deve ser um email válido"
+}
+14:36:13.629 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "email": "email deve ser um email válido"
+}
+ 
+14:36:13.632 [main] INFO  com.intuit.karate - [print] {
+  "email": "email deve ser um email válido"
+}
+ 
+14:36:13.640 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Login into the application with an invalid email$
+14:36:13.648 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:36:13.656 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"fulano@qaqaqa.com.br","password":"teste"}
+
+14:36:13.759 [main] DEBUG com.intuit.karate - response time in milliseconds: 103
+1 < 401
+1 < Date: Thu, 09 Dec 2021 17:32:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 61f4b074-404f-427e-ad12-96e019478938
+{
+    "message": "Email e/ou senha inválidos"
+}
+14:36:13.761 [main] INFO  com.intuit.karate - [print] Response is:  {
+  "message": "Email e/ou senha inválidos"
+}
+ 
+14:36:13.763 [main] INFO  com.intuit.karate - [print] {
+  "message": "Email e/ou senha inválidos"
+}
+ 
+14:36:14.311 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/feature/Login/Login.feature
