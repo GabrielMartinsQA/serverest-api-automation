@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65a2dce7-6ad1-4798-8afa-c1ad6338b428" name="Changes" comment="Adição de massa de dados e tabela de casos">
+    <list default="true" id="65a2dce7-6ad1-4798-8afa-c1ad6338b428" name="Changes" comment="Adição de massa de dados na feature de Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Data/Data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Data/Data.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Login/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639071471056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adição de massa de dados na feature de Login">
+      <created>1639079459117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639079459117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,7 +204,8 @@
     <MESSAGE value="Feature de login" />
     <MESSAGE value="ajuste pra teste login" />
     <MESSAGE value="Adição de massa de dados e tabela de casos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição de massa de dados e tabela de casos" />
+    <MESSAGE value="Adição de massa de dados na feature de Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adição de massa de dados na feature de Login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
